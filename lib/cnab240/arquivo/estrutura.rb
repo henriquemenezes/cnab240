@@ -1,4 +1,21 @@
 module Cnab240
+  ESTRUTURA_V30 = {
+    segmentos_implementados: [:t, :u],
+    boleto: {
+      header: Cnab240::V30::Boletos::Header,
+      trailer: Cnab240::V30::Boletos::Trailer,
+      segmentos: [:t, :u],
+      t: {
+        remessa: false,
+        retorno: true
+      },
+      u: {
+        remessa: false,
+        retorno: true
+      }
+    }
+  }
+
   ESTRUTURA_V40 = {
     segmentos_implementados: [:a],
     pagamento: {
@@ -213,6 +230,7 @@ module Cnab240
   }
 
   ESTRUTURA = {
+    'V30' => ESTRUTURA_V30,
     'V40' => ESTRUTURA_V40,
     'V60' => ESTRUTURA_V60,
     'V80' => ESTRUTURA_V80,

@@ -35,15 +35,11 @@ Somente pagamentos. Veja pasta docs/
 
 Adicione ao Gemfile:
 
-    gem 'cnab240'
+    gem 'cnab240', :git => 'git@github.com:henriquemenezes/cnab240.git'
 
 execute:
 
     $ bundle
-
-Ou adicione no seu chiqueiro:
-
-    $ gem install cnab240
 
 ## Como usar
 

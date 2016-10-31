@@ -13,6 +13,8 @@ require 'cnab240/lote'
 require 'cnab240/lote/v40/boletos/header'
 require 'cnab240/lote/v40/boletos/trailer'
 
+require 'cnab240/segmentos/v30/segmento_t'
+require 'cnab240/segmentos/v30/segmento_u'
 require 'cnab240/segmentos/v40/segmento_a'
 require 'cnab240/segmentos/v60/segmento_a'
 require 'cnab240/segmentos/v60/segmento_b'
@@ -67,6 +69,8 @@ require 'cnab240/segmentos/v87/segmento_z'
 
 require 'cnab240/arquivo/arquivo'
 
+require 'cnab240/arquivo/v30/header'
+require 'cnab240/arquivo/v30/trailer'
 require 'cnab240/arquivo/v80/header'
 require 'cnab240/arquivo/v80/trailer'
 require 'cnab240/arquivo/v81/header'
@@ -81,6 +85,9 @@ require 'cnab240/arquivo/v87/header'
 require 'cnab240/arquivo/v87/trailer'
 require 'cnab240/arquivo/v60/header'
 require 'cnab240/arquivo/v60/trailer'
+
+require 'cnab240/boletos/v30/header'
+require 'cnab240/boletos/v30/trailer'
 
 require 'cnab240/pagamentos/v80/header'
 require 'cnab240/pagamentos/v80/trailer'
